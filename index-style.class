@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="index-style.css">
+    <title> My Business </title>
+  </head>
+
+  <body>
+    <a href = "mainpage.html" class = "btn"> Home </a>
+    <a href = "#" class = "btn"> Contact Us </a>
+    <a href = "#" class = "btn"> Products & Services </a>
+   
+    <header id = "showcase">
+  <h1> Welcome to Hannah's Pizza Shop </h1>
+    </header>
+    <div id="content" class= "container">
+      At Hannah's Pizza Shop, we daily handcraft artisanal pizza for our customers. We put all our passion for high quality pizza into hand rolling dough, creating the perfect sauce, and carefully cooking the best pizzas in a state-of-the-art brick oven. We don't just make pizza, we create an Italian experience - the way it's meant to be. 
+    </div>
+    <a href= "mainpage.html" class= "btn"> Learn More</a>
+  </body>
+  
+
+</html>
