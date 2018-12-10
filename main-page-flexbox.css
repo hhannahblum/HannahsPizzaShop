@@ -13,6 +13,11 @@ h2, h3 {
   display: flex;
 }
 
+.menu-item a:link,a:hover,a:visited,a:active {
+  color:white;
+  text-decoration:none;
+}
+
 .main-column {
   flex:3;
   order:2;
@@ -137,7 +142,7 @@ h1, h2
 .btn2
   {
    display: inline-block;
-   color: black;
+   color: none;
    text-decoration: none;
    padding: 1rem 2rem;
    border: black 1px solid;
@@ -149,14 +154,17 @@ h1, h2
    animation-fill-mode: forwards;
    transition-property: transform;
    transition-duration: 1s;
-   font-family: Verdana;
+   font-family: Roboto;
+   background-color: darkred;
   }
+  
    @keyframes btn2 {
     0% {opacity: 0;}
     100% {opacity: 1}
-
   }
   
   .btn2:hover {
     transform: rotateY(180deg);
+  }
+  
   }
