@@ -75,6 +75,20 @@ body {
   .btn:hover {
     transform: rotateY(180deg);
   }
+  
+.btn-one {
+  flex:1;
+  order:1;
+}
+
+.btn-two {
+  flex:1;
+  order:2;
+}
+.btn-three {
+  flex: 1;
+  order: 3;
+}
 
 
 .call-outs-container {
