@@ -1,52 +1,67 @@
 <!DOCTYPE html>
+  
 <html>
-<head>
-  <link rel="stylesheet" type="text/css" href="main-page-flexbox.css">
-<link href="https://fonts.googleapis.com/css?family=K2D|Open+Sans:300i|Roboto:100,300,400,500"
-        rel = "stylesheet">
-</head>
-<body>
-  
-   <div class="menu-layout">
-    <div class = menu-item> <a href= "index.html" class= "btn2"> Home </a></div>
-    <div class = menu-item> <a href= "#" class= "btn2"> Products & Services </a> </div> 
-    <div class = menu-item> <a href= "contactus.html" class= "btn2"> Contact Us </a> </div>
-  </div> 
-  
-  
-  <div class="column-layout">
-    <div class="main-column">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    
+    <div class="menu-layout">
+      <div class="menu-item"><a href="index.html">Home</a></div>
+      <div class="menu-item">Products & Services</div>
+      <div class="menu-item"><a href= "contactus.html"> Contact Us </a></div>
+    </div>
+
+
+    <div class="column-layout">
+      <div class="main-column">
         <h2>Location</h2>
         <p>1234 W 1st Street<br>
         Omaha, NE 68111</p>
         <p><b>Phone:</b> 402-123-4567</p>
         <p><b>Email:</b> inquiries@hannahspizzashop.com</p>
-    
-    </div>
+      </div>
 
-    <div class="sidebar-two">
-<h2>Hours of Operation</h2>
+      <div class="sidebar-two">
+        <h2>Hours of Operation</h2>
         <p><b>Mon-Fri:</b> 10am - 11pm<br>
-        <b>Sat:</b> 11pm - 9pm
-         <b>Sun:</b> Closed </p>
-  </div>
-  </div>
-
-  <div class="call-outs-container">
+        <b>Sat:</b> 10pm - 9pm</p>
+        </div>
+        
+      </div>
+      
+          <div id="map"> </div>
+          
+      <div class="call-outs-container">
     <div class="call-out">
       <h4>Special Offer 1</h4>
       <p> Buy 10 of our hand-crafted Italian pizzas and enjoy the 11th free! (Expires December 31st, 2018.) </p>
     <a href= "mainpage.html" class= "btn"> Learn More</a>
     </div>
-  
 
     <div class="call-out">
       <h4>Special Offer 2</h4>
       <p> Get 15% off your next pizza when your order through our mobile app! (Expires December 31st, 2018.) </p>
     <a href= "mainpage.html" class= "btn"> Learn More</a>
     </div>
-
-  </div>
+    
+    </div>
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat:41.25861, lng:-95.93779 };
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+     <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0e0W1ICK1sCU8cR--3xgrEIOrQEsDrvU&callback=initMap">
+    </script>
+    
 </body>
-
 </html>
