@@ -1,16 +1,47 @@
 /* Styles go here */
 
-h2, h3 {
-  margin: 0 0 -.7em 0;
+body {
+  font-family: Roboto, sans-serif;
+  background-color: lightgrey;
 }
 
-.column-layout {
-  max-width: 800px;
-  background-color: white;
-  margin:40px auto 0 auto;
-  line-height: 1.65;
-  padding: 20px 40px;
+h2, h3 {
+  margin: 0 0 .7em 0;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+  margin: 20px auto;
+  max-width: 1000px;
+  }
+
+#form1 {
+  text-align: center;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.menu-layout {
   display: flex;
+  margin: 0px auto;
+  max-width: 930px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.menu-item {
+  flex: 1;
+  text-align: center;
+  color: white;
+  background-color: darkred;
+  box-sizing: border-box;
+  line-height: 1.65;
+  padding: 1em 0em;
+  margin: 1em;
+  flex-basis: 30%;
+  transition-property: background-color, border-radius;
+  transition-duration: 2s, 1s;
 }
 
 .menu-item a:link,a:hover,a:visited,a:active {
@@ -18,153 +49,75 @@ h2, h3 {
   text-decoration:none;
 }
 
-.main-column {
-  flex:3;
-  order:2;
+.menu-item:hover {
+  background-color: darkblue;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
-.sidebar-one {
-  flex:1;
-  order:1;
+#logo {
+  width: 100%;
+}
+
+.column-layout {
+  max-width: 800px;
+  background-color: white;
+  margin: 10px auto 0 auto;
+  line-height: 1.65;
+  padding: 20px 50px;
+  display: flex;
+}
+
+.main-column {
+  flex: 2;
+  order: 1;
+  padding-right: 40px;
 }
 
 .sidebar-two {
-  flex:1;
-  order:2;
+  flex: 1;
+  order: 2;
 }
 
 .call-outs-container {
-  max-width:800px;
-  margin: 40px auto 0 auto;
+  max-width: 900px;
+  margin: 20px auto 0 auto;
   display: flex;
-  justify-content: space-around;
-  font-family: 'Roboto', regular;
-  font-size: 20px;
+  justify-content: space-between;
 }
 
 .call-out {
   padding: 20px;
   box-sizing: border-box;
   margin-bottom: 20px;
-  width: 30%;
+  flex-basis: 49%;
 }
 
-.call-out:nth-child(1) {background-color:blue;}
-.call-out:nth-child(2) {background-color:red;}
+.call-out:nth-child(1) {background-color:darkblue;}
+.call-out:nth-child(2) {background-color:darkblue;}
 
-
-.heading 
-{
-  font-family: 'Roboto', regular;
-  font-size: 24px;
-}
-.body 
-{
-   font-family: 'K2D', regular;
-   font-size: 15px
-}
-.firstheading
-{
-  font-family: 'Roboto', regular;
-  font-size: 32px;
-}
-.outer-box
-{
-  background-color: grey;
-  padding: 10px;
-  margin: 20px 10px;
-  height: 100%;
-  min-height: 300px;
-}
-.name
-{
+button {
+  background-color: darkred;
   color: white;
-  font-family: 'Roboto', regular;
-  font-size: 20px;
-  margin-left: 20px;
+  width: 5rem;
+  height: 2rem;
+  margin: 20px auto;
+  font-family: Roboto;
 }
-.picture
-{
-  margin-left:20px;
-  margin-right:20px;
-  margin-bottom:20px;
-  float:left;
-  border:1px solid black;
-  
-}
-.bio
-{
-  font-family: 'Roboto';
-  font-weight: 300;
-  padding-right:20px;
-  padding-left:20px;
-  padding-bottom:20px;
-}
-.squarebullet
-{
-  list-style-type:square
-}
-h1, h2
-{
-  color: darkred;
-}
-#ad
-{
-  float:right;
-  margin-right:40px;
-  max-width: 150px;
-}
-.btn
-  {
-   display: inline-block;
-   color: white;
-   text-decoration: none;
-   padding: 1rem 2rem;
-   border: white 1px solid;
-   margin-top: 40px;
-   opacity: 0;
-   animation-name: btn;
-   animation-duration: 3s;
-   animation-delay: 3s;
-   animation-fill-mode: forwards;
-   transition-property: transform;
-   transition-duration: 1s;
-  }
-   @keyframes btn {
-    0% {opacity: 0;}
-    100% {opacity: 1}
 
-  }
-  
-  .btn:hover {
-    transform: rotateY(180deg);
-  }
-.btn2
-  {
-   display: inline-block;
-   color: none;
-   text-decoration: none;
-   padding: 1rem 2rem;
-   border: black 1px solid;
-   margin-top: 40px;
-   opacity: 0;
-   animation-name: btn2;
-   animation-duration: 1s;
-   animation-delay: 1s;
-   animation-fill-mode: forwards;
-   transition-property: transform;
-   transition-duration: 1s;
-   font-family: Roboto;
-   background-color: darkred;
-  }
-  
-   @keyframes btn2 {
-    0% {opacity: 0;}
-    100% {opacity: 1}
-  }
-  
-  .btn2:hover {
-    transform: rotateY(180deg);
-  }
-  
-  }
+#buttondiv {
+  text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
