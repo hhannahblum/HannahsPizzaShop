@@ -96,6 +96,11 @@ h2, h3 {
 .call-out:nth-child(1) {background-color:darkblue;}
 .call-out:nth-child(2) {background-color:darkblue;}
 
+.contact-form
+{
+  display: center;
+}
+
 button {
   background-color: darkred;
   color: white;
